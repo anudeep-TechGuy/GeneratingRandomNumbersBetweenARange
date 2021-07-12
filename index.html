@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        function randomRange(min, max) {
+            min_val = Math.ceil(min);
+            max_val = Math.floor(max);
+
+            return Math.floor(Math.random() * (max - min + 1) + min);
+
+        }
+
+
+        console.log("This is written by ANUDEEP Nayakoti");
+
+
+        var min_val = prompt("Enter the minimum vale: ");
+        min_val = parseInt(min_val);
+
+
+        var max_val = prompt("Enter the maximum value: ");
+        max_val = parseInt(max_val);
+
+        for (var i = 0; i < 30; i++) {
+            var rand = randomRange(min_val, max_val);
+            console.log(rand);
+            document.write("Random number is:" + rand + "<br/>");
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
