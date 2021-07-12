@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width:400px;
+            height:100px;
+            margin:0px auto;
+            border: 10px dashed black;
+           
+         
+        }
+        h2{
+            padding:20px;
+            font-size: 20px;
+          
+            color:firebrick;
+            text-align: center;
+            margin-bottom: 80px;
+            text-transform: capitalize;
+        }
+        p{
+            font-size:20px;
+            color:tomato;
+            
+            
+        }
+        
+        mark{
+            background-color:yellow;
+            color:blue;
+            border:2px solid black;
+            padding:40px;
+            font-size: 100px;
+            
+        }
+    </style>
+</head>
+
+    
+
+    
+
+    <script>
+    var alphabets = ['a','b','c','d','e','f', 'g','h','i','j','k','l','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+
+    var min_val=Math.ceil(0);
+   
+     var max_val= Math.floor(alphabets.length);
+     console.log(alphabets);
+     console.log(alphabets.length);
+     console.log(max_val);
+
+     
+     function randomLetter(){
+      var rand =Math.floor(Math.random()*(max_val-min_val)+min_val);
+
+      console.log(alphabets[rand].toUpperCase());
+      var alphabet=(alphabets[rand].toUpperCase());
+     
+      //lets c
+      document.write("<body><h2>Please reload the page: </h2></br/> <p><em>Random Alphabet is</em>: <mark>" +alphabet +"</mark> </p>");
+
+     }
+     randomLetter();
+     
+
+   
+
+    </script>
+
+</body>
+</html>
